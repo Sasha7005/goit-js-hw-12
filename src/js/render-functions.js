@@ -9,6 +9,7 @@ const lightbox = new SimpleLightbox('.gallery-link', {
   captionDelay: 250,
   overlayOpacity: 1,
 });
+const loadMore = document.querySelector('.btn-load');
 
 export function createGallery(images) {
   const markup = images
@@ -61,4 +62,10 @@ export function showLoader() {
 
 export function hideLoader() {
   loader.classList.remove('active');
+}
+export function showLoadMore() {
+  loadMore.classList.add('is-active');
+}
+export function hideLoadMore() {
+  loadMore.classList.remove('is-active');
 }

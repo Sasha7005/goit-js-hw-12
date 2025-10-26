@@ -102,3 +102,14 @@
   letter-spacing: 0.04em;
   text-align: center;
 }
+.btn-load {
+  display: block;
+  margin: 16px auto 0;
+  width: 125px;
+}
+.btn-load {
+  display: none;
+}
+.btn-load.is-active {
+  display: block;
+}
